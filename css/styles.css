@@ -1,0 +1,197 @@
+/* importeer Poppins font van fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* importeer Helvetica font uit onze eigen mappen */
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('../assets/HelveticaNeue.otf');
+  font-style: normal;
+  font-weight: 300;
+}
+
+/* CSS reset, deze zet standaard alle witruimte (margin en padding) op 0. Je moet dan zelf overal weer margin en padding toevoegen op de elementen waar je dit wel wilt hebben.
+   Ook zorgen we dat voor alle block elementen de afmetingen niet alleen worden bepaald door de content, maar dat ook padding en border meetellen. 
+   Dit ontwerpt makkelijker.
+   Zie: https://www.internetingishard.com/html-and-css/css-box-model/#content-boxes-and-border-boxes  */
+*, html {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+/* Stel een witte achtergrond in en geef de body een beetje margin, relatief ten opzichte van het schermformaat.
+   Zet tevens een standaard lettertype wat overerft naar alle tags binnen de body, tenzij die zelf expliciet een ander lettertype krijgen. */
+body {
+	background-color: #FFFFFF;
+	background-repeat: no-repeat;
+	background-position: 70% 90%;
+	margin: 0;
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 1.0em;
+	color: #090806;
+	font-weight: 300;
+}
+
+/* onderstaande styles geven een voorbeeld hoe je de geimporteerde fonts kunt gebruiken.
+   Op je eigen website mag je natuurlijk andere lettertypes, groottes, en
+   kleuren, etc. voor deze tags gebruiken. */
+
+h1 {
+	position: static;
+	display: flex;
+	justify-content: center;
+	font-family: 'HelveticaNeue', 'Poppins', sans-serif;
+	font-stretch:condensed;
+	font-weight: bold;
+	margin-top: .3em;   
+	font-size: 1.5em;
+	color: #ffffff;
+	font-weight: 700; /* bold */
+}
+
+ul {
+	display: flex;
+	justify-content: center;
+	justify-content: space-around;
+	list-style: none;
+}
+
+h2 {
+	display: flex;
+	justify-content: center;
+	font-family: 'Baskerville', 'Poppins', sans-serif;
+	font-style: italic;
+	font-stretch: condensed;
+	font-size: 1em;
+	color: #78554d;
+	border-radius: 100%;
+	font-weight: 700; /* bold */
+}
+
+/* Home screen */
+
+#home_screen {
+	background-color: #cccccc;
+}
+
+#namebrand {
+	display: flex;
+	margin: .7em;
+}
+
+#logo {
+	width: 40px;
+	margin-right: .3em;
+}
+
+/* Buttons */
+
+nav {
+	display: grid;
+	background-image: url(../images/kring.png);
+	grid-template-columns: repeat(2, 150px [col-start]);
+	grid-template-rows: repeat(3, 150px [col-start]);
+	justify-content: center;
+	margin-top: 5em;
+}
+
+#streetart_button {
+	width: 150px;
+	transition-duration: .05s;
+}
+
+#streetart_button:active{
+	transform: scale(1.05);
+}
+
+#parks_button {
+	width: 100px;
+}
+
+#artnstatues_button {
+	width: 100px;
+}
+
+#buildings_button {
+	width: 100px;
+}
+
+#all_button {
+	width: 100px;
+}
+
+
+/* Cam screen */
+
+#capture {
+	background-color: #090806;
+	padding-left: auto;
+	padding-right: auto;
+	padding-top: 170px;
+	padding-bottom: 170px;
+	color: #ffffff;
+}
+
+#camera {
+	background-color: #090806;
+	display: flex;
+	justify-content: center;
+}
+
+#photo_container {
+	display: grid;
+	justify-content: space-around;
+	grid-template-columns: repeat(3, 120px [col-start]);
+	gap: 5px;
+}
+
+#photo_container div {
+	width: 120px;
+	height: 120px;
+	background-color: aquamarine;
+}
+
+/* Photo screen */
+
+#photo_body {
+	background-color: #f1eae2;
+}
+
+#back_button {
+	width: 100px;
+	margin-top: 6em;
+}
+
+#random_button {
+	width: 100px;
+	margin-top: 1em;
+}
+
+#check_button {
+	width: 100px;
+	margin-top: 6em;
+}
+
+#photoscreen {
+	height: 350px;
+}
+
+#thermometer {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -4em;
+	height: 150px;
+}
+
+/* Under construction */
+
+#under_cons {
+	color: black;
+}
+
+#construction_container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
