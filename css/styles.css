@@ -62,7 +62,7 @@ h2 {
 	font-family: 'Baskerville', 'Poppins', sans-serif;
 	font-style: italic;
 	font-stretch: condensed;
-	font-size: 1em;
+	font-size: 1.3em;
 	color: #78554d;
 	border-radius: 100%;
 	font-weight: 700; /* bold */
@@ -71,17 +71,31 @@ h2 {
 /* Home screen */
 
 #home_screen {
-	background-color: #cccccc;
+	width: 100vw;
+	height: 100vh;
+	background-image: url(../images/index_background.png);
+	background-size: contain;
 }
 
 #namebrand {
 	display: flex;
-	margin: .7em;
+	margin-bottom: .7em;
+	margin-left: .7em;
 }
 
 #logo {
-	width: 40px;
+	width: 35px;
 	margin-right: .3em;
+}
+
+#themes {
+	color: #f8d95d;
+	margin-top: 2em;
+	margin-left: .5em;
+	font-size: 2em;
+	font-family: 'Baskerville', 'Poppins', sans-serif;
+	font-style: italic;
+	font-weight: 100;
 }
 
 /* Buttons */
@@ -89,14 +103,20 @@ h2 {
 nav {
 	display: grid;
 	background-image: url(../images/kring.png);
-	grid-template-columns: repeat(2, 150px [col-start]);
-	grid-template-rows: repeat(3, 150px [col-start]);
-	justify-content: center;
-	margin-top: 5em;
+	background-repeat: no-repeat;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	align-items: center;
+	justify-items: center;
+	margin-top: -1em;
+}
+
+nav article:first-of-type {
+	grid-column: span 2;
 }
 
 #streetart_button {
-	width: 150px;
+	width: 180px;
 	transition-duration: .05s;
 }
 
@@ -123,6 +143,11 @@ nav {
 
 /* Cam screen */
 
+header.cam_header {
+	position: sticky;
+	top: 0;
+}
+
 #capture {
 	background-color: #090806;
 	padding-left: auto;
@@ -141,7 +166,7 @@ nav {
 #photo_container {
 	display: grid;
 	justify-content: space-around;
-	grid-template-columns: repeat(3, 120px [col-start]);
+	grid-template-columns: 3fr 3fr 3fr;
 	gap: 5px;
 }
 
@@ -149,6 +174,10 @@ nav {
 	width: 120px;
 	height: 120px;
 	background-color: aquamarine;
+}
+
+#cam_footer {
+	margin-top: .5em;
 }
 
 /* Photo screen */
