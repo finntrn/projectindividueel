@@ -75,6 +75,7 @@ h2 {
 	height: 100vh;
 	background-image: url(../images/index_background.png);
 	background-size: contain;
+	background-color: black;
 }
 
 #namebrand {
@@ -90,7 +91,7 @@ h2 {
 
 #themes {
 	color: #f8d95d;
-	margin-top: 2em;
+	margin-top: 2.5em;
 	margin-left: .5em;
 	font-size: 2em;
 	font-family: 'Baskerville', 'Poppins', sans-serif;
@@ -187,17 +188,17 @@ header.cam_header {
 }
 
 #back_button {
-	width: 100px;
+	width: 80px;
 	margin-top: 6em;
 }
 
 #random_button {
-	width: 100px;
+	width: 80px;
 	margin-top: 1em;
 }
 
 #check_button {
-	width: 100px;
+	width: 80px;
 	margin-top: 6em;
 }
 
