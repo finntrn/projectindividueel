@@ -9,6 +9,13 @@
   font-weight: 300;
 }
 
+@font-face {
+	font-family: 'Hamburg AH';
+	src: url('../assets/hamburg-ah-regular.ttf');
+	font-style: normal;
+	font-weight: 300;
+  }
+
 /* CSS reset, deze zet standaard alle witruimte (margin en padding) op 0. Je moet dan zelf overal weer margin en padding toevoegen op de elementen waar je dit wel wilt hebben.
    Ook zorgen we dat voor alle block elementen de afmetingen niet alleen worden bepaald door de content, maar dat ook padding en border meetellen. 
    Dit ontwerpt makkelijker.
@@ -40,11 +47,10 @@ h1 {
 	position: static;
 	display: flex;
 	justify-content: center;
-	font-family: 'HelveticaNeue', 'Poppins', sans-serif;
+	font-family: 'Helvetica Neue', 'Poppins', sans-serif;
 	font-stretch:condensed;
 	font-weight: bold;
-	margin-top: .3em;   
-	font-size: 1.5em;
+	font-size: 1.7em;
 	color: #ffffff;
 	font-weight: 700; /* bold */
 }
@@ -59,13 +65,12 @@ ul {
 h2 {
 	display: flex;
 	justify-content: center;
-	font-family: 'Baskerville', 'Poppins', sans-serif;
-	font-style: italic;
-	font-stretch: condensed;
-	font-size: 1.3em;
-	color: #78554d;
+	font-family: 'Poppins', sans-serif;
+	font-weight: light;
+	font-size: 1em;
+	color: #f1eae2;
 	border-radius: 100%;
-	font-weight: 700; /* bold */
+	font-weight: 100;
 }
 
 /* Home screen */
@@ -80,8 +85,11 @@ h2 {
 
 #namebrand {
 	display: flex;
-	margin-bottom: .7em;
-	margin-left: .7em;
+	margin-bottom: 1.5em;
+	justify-content: center;
+	align-items: center;
+	padding: .5em;
+	background-color: transparent;
 }
 
 #logo {
@@ -91,9 +99,9 @@ h2 {
 
 #themes {
 	color: #f8d95d;
-	margin-top: 2.5em;
-	margin-left: .5em;
-	font-size: 2em;
+	margin-top: 3em;
+	margin-left: 1em;
+	font-size: 1.5em;
 	font-family: 'Baskerville', 'Poppins', sans-serif;
 	font-style: italic;
 	font-weight: 100;
@@ -105,11 +113,12 @@ nav {
 	display: grid;
 	background-image: url(../images/kring.png);
 	background-repeat: no-repeat;
+	background-position: 6em;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
 	align-items: center;
 	justify-items: center;
-	margin-top: -1em;
+	margin-top: -2em;
 }
 
 nav article:first-of-type {
@@ -119,6 +128,7 @@ nav article:first-of-type {
 #streetart_button {
 	width: 180px;
 	transition-duration: .05s;
+	margin-bottom: -2em;
 }
 
 #streetart_button:active{
@@ -150,7 +160,6 @@ header.cam_header {
 }
 
 #capture {
-	background-color: #090806;
 	padding-left: auto;
 	padding-right: auto;
 	padding-top: 170px;
@@ -159,6 +168,9 @@ header.cam_header {
 }
 
 #camera {
+	background-image: url(../images/camera_widget.png);
+	background-repeat: no-repeat;
+	background-size: cover;
 	background-color: #090806;
 	display: flex;
 	justify-content: center;
@@ -181,6 +193,69 @@ header.cam_header {
 	margin-top: .5em;
 }
 
+#cam_body {
+	background-color: #f1eae2;
+}
+
+/* Reward part */
+
+#appie_logo {
+	display: flex;
+	align-items: center;
+	margin-top: .5em;
+	margin-left: .5em;
+}
+
+#appie_logo_img {
+	height: 50px;
+}
+
+#appie_logo_text_1 {
+	font-family: 'Hamburg AH', Arial, Helvetica, sans-serif;
+	color: #00a0e2;
+	font-size: .7em;
+}
+
+#appie_logo_text {
+	font-family: 'Hamburg AH', Arial, Helvetica, sans-serif;
+	color: #00a0e2;
+}
+
+p {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.2em;
+}
+
+#font_change_1 {
+	font-family: 'Baskerville', sans-serif;
+	font-size: 2em;
+	color: #f8d95d;
+	margin-top: -.1em;
+	background-color: #78554d;
+	border-radius: 100%;
+	padding-right: .4em;
+	padding-left: .2em;
+}
+
+#font_change_2 {
+	font-family: 'Baskerville', sans-serif;
+	font-size: 2em;
+	color: #78554d;
+}
+
+#back_button_2 {
+	width: 80px;
+	margin-top: 1em;
+}
+
+#check_button_2 {
+	width: 80px;
+	margin-top: 1em;
+}
+
 /* Photo screen */
 
 #photo_body {
@@ -189,29 +264,74 @@ header.cam_header {
 
 #back_button {
 	width: 80px;
-	margin-top: 6em;
+	margin-top: 5.5em;
 }
 
 #random_button {
 	width: 80px;
-	margin-top: 1em;
+	margin-top: 2.5em;
 }
 
 #check_button {
 	width: 80px;
-	margin-top: 6em;
+	margin-top: 5.5em;
 }
 
 #photoscreen {
-	height: 350px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: .6em;
+	width: 95%;
+	border: 5px solid white;
+	border-radius: 5%;
+}
+
+#thermosect {
+	display: grid;
+	margin-right: auto;
+	margin-left: auto;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	align-items: center;
+	justify-items: center;
+	width: 90%;
+}
+
+#tiptext {
+	font-family: 'Baskerville', 'Poppins', sans-serif;
+	font-style: italic;
+	font-stretch: condensed;
+	font-size: .7em;
+	margin-top: .5em;
+}
+
+#distancetext {
+	font-family: 'Baskerville', 'Poppins', sans-serif;
+	font-style: italic;
+	font-stretch: condensed;
+	font-size: 1em;
 }
 
 #thermometer {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: -4em;
+	margin-top: -5em;
 	height: 150px;
+}
+
+#thermtext {
+	display: flex;
+	justify-content: center;
+	font-family: 'Baskerville', 'Poppins', sans-serif;
+	font-style: italic;
+	font-stretch: condensed;
+	font-size: 1.3em;
+	color: #78554d;
+	border-radius: 100%;
+	font-weight: 100;
+	margin-top: .5em;
 }
 
 /* Under construction */
