@@ -151,6 +151,15 @@ nav article:first-of-type {
 	width: 100px;
 }
 
+#footer_p {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: 'Poppins', sans-serif;
+	font-size: .8em;
+	color:#f1eae2;
+}
+
 
 /* Cam screen */
 
@@ -263,10 +272,9 @@ p {
 
 /* Photo screen */
 
-#photo_main {
+#photo_footer {
 	background-image: url(../images/kring.png);
 	background-repeat: no-repeat;
-	background-position: 6em 15em;
 }
 
 #photo_body {
