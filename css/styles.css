@@ -197,7 +197,12 @@ header.cam_header {
 	background-color: #f1eae2;
 }
 
-/* Reward part */
+/* Reward footer */
+
+#cam_footer {
+	background-image: url(../images/kring.png);
+	background-repeat: no-repeat;
+}
 
 #appie_logo {
 	display: flex;
@@ -257,6 +262,12 @@ p {
 }
 
 /* Photo screen */
+
+#photo_main {
+	background-image: url(../images/kring.png);
+	background-repeat: no-repeat;
+	background-position: 6em 15em;
+}
 
 #photo_body {
 	background-color: #f1eae2;
