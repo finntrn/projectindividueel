@@ -213,51 +213,29 @@ header.cam_header {
 	background-repeat: no-repeat;
 }
 
-#appie_logo {
-	display: flex;
-	align-items: center;
-	margin-top: .5em;
-	margin-left: .5em;
-}
-
 #appie_logo_img {
 	height: 50px;
-}
-
-#appie_logo_text_1 {
-	font-family: 'Hamburg AH', Arial, Helvetica, sans-serif;
-	color: #00a0e2;
-	font-size: .7em;
-}
-
-#appie_logo_text {
-	font-family: 'Hamburg AH', Arial, Helvetica, sans-serif;
-	color: #00a0e2;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: .5em;
 }
 
 p {
-	display: flex;
+	margin-top: 1em;
 	flex-direction: column;
-	align-items: center;
 	font-family: 'Poppins', sans-serif;
-	font-size: 1.2em;
+	font-size: 1em;
 }
 
-#font_change_1 {
-	font-family: 'Baskerville', sans-serif;
-	font-size: 2em;
-	color: #f8d95d;
-	margin-top: -.1em;
-	background-color: #78554d;
-	border-radius: 100%;
-	padding-right: .4em;
-	padding-left: .2em;
+#reward_sect {
+	display: flex;
+	margin-left: 2em;
 }
 
-#font_change_2 {
-	font-family: 'Baskerville', sans-serif;
-	font-size: 2em;
-	color: #78554d;
+#alcohol_img {
+	margin-top: -30px;
+	height: 150px;
 }
 
 #back_button_2 {
@@ -301,7 +279,7 @@ p {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: .6em;
-	width: 95%;
+	width: 340px;
 	border: 5px solid white;
 	border-radius: 5%;
 }
@@ -351,6 +329,44 @@ p {
 	border-radius: 100%;
 	font-weight: 100;
 	margin-top: .5em;
+}
+
+/* Succesful upload screen */
+
+#review {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 5em;
+	width: 75%;
+	font-family: 'Poppins', sans-serif;
+	font-style: italic;
+	font-size: 1.5em;
+	color: #000000;
+	border-radius: 100%;
+	font-weight: 100;
+}
+
+#review_2 {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 3em;
+	width: 75%;
+	font-family: 'Poppins', sans-serif;
+	font-style: italic;
+	font-size: 1em;
+	color: #484848;
+	border-radius: 100%;
+	font-weight: 100;
+}
+
+#back_button_3 {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 3em;
+	width: 80px;
 }
 
 /* Under construction */
